@@ -11,10 +11,10 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import java.util.ArrayList
 
-class PrefectureListRecyclerAdapter (context: Context, cityDataList: ArrayList<CityData>, listener: OnRecyclerListener): RecyclerView.Adapter<PrefectureListRecyclerAdapter.ViewHolder>(){
+class PrefectureListRecyclerAdapter (context: Context, listener: OnRecyclerListener): RecyclerView.Adapter<PrefectureListRecyclerAdapter.ViewHolder>(){
 
     private val inflater: LayoutInflater = LayoutInflater.from(context)
-    private var cityDataList: ArrayList<CityData> = cityDataList
+    private var cityDataList: ArrayList<CityData> = ArrayList()
     private val context: Context = context
     private val listener: OnRecyclerListener = listener
     private var selectedRow = -1
